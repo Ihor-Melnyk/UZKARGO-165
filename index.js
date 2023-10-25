@@ -294,16 +294,22 @@ function RegisterContractTask() {
     setPropertyRequired("RegNumber");
     setPropertyHidden("RegDate", false);
     setPropertyHidden("RegNumber", false);
+    setPropertyDisabled("RegDate", false);
+    setPropertyDisabled("RegNumber", false);
   } else if (stateTask == "completed") {
     setPropertyRequired("RegDate");
     setPropertyRequired("RegNumber");
     setPropertyHidden("RegDate", false);
     setPropertyHidden("RegNumber", false);
+    setPropertyDisabled("RegDate");
+    setPropertyDisabled("RegNumber");
   } else {
     setPropertyRequired("RegDate", false);
     setPropertyRequired("RegNumber", false);
     setPropertyHidden("RegDate");
     setPropertyHidden("RegNumber");
+    setPropertyDisabled("RegDate", false);
+    setPropertyDisabled("RegNumber", false);
   }
 }
 
